@@ -1214,7 +1214,7 @@
         "id": "ed4ec01b"
       },
       "source": [
-        "## Exercises"
+        "### Exercises"
       ]
     },
     {
@@ -1297,24 +1297,54 @@
     },
     {
       "cell_type": "code",
-      "execution_count": null,
+      "execution_count": 1,
       "id": "5d358f37",
       "metadata": {
-        "id": "5d358f37"
+        "id": "5d358f37",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "e8cba74f-cbc0-458a-adbb-ba477bc8ed99"
       },
-      "outputs": [],
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "42"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 1
+        }
+      ],
       "source": [
         "round(42.5)"
       ]
     },
     {
       "cell_type": "code",
-      "execution_count": null,
+      "execution_count": 2,
       "id": "12aa59a3",
       "metadata": {
-        "id": "12aa59a3"
+        "id": "12aa59a3",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "b85ffdbd-3716-4cd2-896c-a3cf4b9b6d1e"
       },
-      "outputs": [],
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "44"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 2
+        }
+      ],
       "source": [
         "round(43.5)"
       ]
@@ -1406,62 +1436,135 @@
     },
     {
       "cell_type": "code",
-      "execution_count": null,
+      "execution_count": 4,
       "id": "8fb50f30",
       "metadata": {
-        "id": "8fb50f30"
+        "id": "8fb50f30",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "a33df36b-eae5-434b-8aeb-13f69264529b"
       },
-      "outputs": [],
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2562\n"
+          ]
+        }
+      ],
       "source": [
-        "# Solution goes here"
+        "# Solution 1:\n",
+        "seconds = 42 * 60 + 42\n",
+        "print(seconds)"
       ]
     },
     {
       "cell_type": "code",
-      "execution_count": null,
+      "execution_count": 5,
       "id": "5eceb4fb",
       "metadata": {
-        "id": "5eceb4fb"
+        "id": "5eceb4fb",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "64b48f69-14d2-4022-dff8-0231ed2b4bd4"
       },
-      "outputs": [],
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "6.211180124223602\n"
+          ]
+        }
+      ],
       "source": [
-        "# Solution goes here"
+        "# Solution 2:\n",
+        "miles = 10 / 1.61\n",
+        "print(miles)"
       ]
     },
     {
       "cell_type": "code",
-      "execution_count": null,
+      "execution_count": 7,
       "id": "fee97d8d",
       "metadata": {
-        "id": "fee97d8d"
+        "id": "fee97d8d",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "54a20215-3e95-4822-c9e3-2464bf3fffcc"
       },
-      "outputs": [],
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "412.482\n"
+          ]
+        }
+      ],
       "source": [
-        "# Solution goes here"
+        "# Solution 3:\n",
+        "total_seconds = 42 * 60 + 42\n",
+        "miles = 10 / 1.61\n",
+        "pace_seconds_per_mile = total_seconds / miles\n",
+        "print(pace_seconds_per_mile)"
       ]
     },
     {
       "cell_type": "code",
-      "execution_count": null,
+      "execution_count": 9,
       "id": "a998258c",
       "metadata": {
-        "id": "a998258c"
+        "id": "a998258c",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "2f995677-a765-498a-c155-a79f66eaf7af"
       },
-      "outputs": [],
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "6 minutes and 52.48200000000003 seconds per mile\n"
+          ]
+        }
+      ],
       "source": [
-        "# Solution goes here"
+        "# Solution 4:\n",
+        "pace_minutes = int(pace_seconds_per_mile // 60)\n",
+        "pace_seconds = pace_seconds_per_mile % 60\n",
+        "print(pace_minutes, \"minutes and\", pace_seconds, \"seconds per mile\")"
       ]
     },
     {
       "cell_type": "code",
-      "execution_count": null,
+      "execution_count": 8,
       "id": "2e0fc7a9",
       "metadata": {
-        "id": "2e0fc7a9"
+        "id": "2e0fc7a9",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "b2512f1a-bdcc-4cd2-897e-f02688cdad4d"
       },
-      "outputs": [],
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "8.727653570337614\n"
+          ]
+        }
+      ],
       "source": [
-        "# Solution goes here"
+        "# Solution 5:\n",
+        "speed_mph = miles / (total_seconds / 3600)\n",
+        "print(speed_mph)"
       ]
     },
     {
